@@ -22,5 +22,6 @@ img{
     flex-direction: row;
     justify-content: space-between;
     inset-block-start: 3.5rem;
+    padding-inline: 1.5rem;
   }
 }

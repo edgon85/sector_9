@@ -62,6 +62,7 @@
     grid-template-rows: 1fr;
     grid-template-areas: 'social bg-content slider';
     align-items: flex-start;
+    padding-inline: 1.5rem;
   }
 
   .social {
