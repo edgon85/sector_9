@@ -1,0 +1,14 @@
+.bg {
+  position: absolute;
+  inline-size: 100vw;
+  block-size: 130vh;
+  max-block-size: 150rem;
+  min-block-size: 100rem;
+  /* background: linear-gradient(180deg,hsla(0,0%,100%,0) 27%,#0b1d26 78%), url(../images/img-2.png); */
+  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 70%, #0b1d26 90%),
+    url(../images/img-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 0;
+}

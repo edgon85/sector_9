@@ -1,0 +1,133 @@
+.post .wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+.postContent{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+}
+
+
+.image img{
+    inline-size: 100%;
+    vertical-align: middle;
+    position: relative;
+/*     aspect-ratio: 1 / 1;
+    object-fit: fill; */
+}
+
+ /* Content info */
+.postContent-info {
+    color: var(--white);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+
+.number {
+    /* border: 1px solid red; */
+    font: var(--button);
+    color: rgba(255, 255, 255, .1);
+    font-size: 5rem;
+    position: absolute;
+}
+
+.number::after{
+    content: '';
+    inline-size: 4.5rem;
+    block-size: 2px;
+    background-color: var(--accent);
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 50%;
+}
+
+.postContent-info .title {
+    padding: 0;
+    font: var(--headline2);
+    font-size: 1.5rem;
+    margin-block-start: 5.25rem;
+}
+
+.postContent-info .description {
+    font: var(--body1-regular);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.postContent-info a {
+    text-decoration: none;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .post .wrapper{
+        gap: 12.5rem;
+    }
+
+    .postContent{
+        flex-direction: row;
+        /* block-size: 45rem; */
+        justify-content: space-between;
+        align-items: center;
+        /* gap: 16.5rem; */
+    }
+
+    .image{
+        position: relative;
+        flex: 1;
+    }
+    .postContent-info {
+        flex: 1;
+        inline-size: 39.5rem;
+        block-size: 26.875rem;
+        margin-left:  9.375rem;
+        margin-block-start: 9rem;
+        margin-block-end: 9rem;
+    }
+
+    .postContent-info a:hover{
+        font-size: 1.25rem;
+        transition:  .3s ease;
+    }
+    .number {
+        font-size: 15rem;
+        inset-block-start: -12.5rem;
+        inset-inline-start: -9.375rem;
+    }
+
+    .number::after{
+        inset-block-start: 45%;
+       inset-inline-start: 50%;
+    }
+
+    .postContent-info .title {
+        font-size: 4rem;
+        margin-block: 0;
+
+    }
+
+    .postContent-info .description {
+        font-size: 1.125rem;
+        /* margin-block-end: 1.75rem; */
+    }
+
+
+    .postContent:nth-child(odd) .image{
+        order: 2;
+    }
+
+}

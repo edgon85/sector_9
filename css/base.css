@@ -1,0 +1,34 @@
+:root { 
+    --bg: #0b1d26; 
+    --white: #ffffff; 
+    --accent: #fdd130; 
+    --headline1: 500 5.5rem/6.25rem Poppins; 
+    --headline2: 600 4rem/normal Poppins; 
+    --button: 700 1.125rem/normal Poppins; 
+    --body1-bold: 700 1.125rem/2rem Poppins; 
+    --body1-medium: 500 1.125rem/2rem Poppins; 
+    --body1-regular: 400 1.125rem/2rem Poppins;     
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font: var(--body1-regular);
+    background-color: var(--bg);
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  
+/*   @media screen and (min-width: 768px) {
+    :root {
+      font-size: 16px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1367px) {
+    :root {
+      font-size: 18px;
+    }
+  }
+   */
